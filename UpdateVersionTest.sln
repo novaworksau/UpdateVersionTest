@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9F201F32-1BC0-4BCE-BF9F-5C9A67F37381}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2091AC98-39FB-4A18-8839-FB0A63F36511}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		CreatePackages.ps1 = CreatePackages.ps1
+		global.json = global.json
+		Set-PackageLabel.ps1 = Set-PackageLabel.ps1
+		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UpdateVersionTest", "src\UpdateVersionTest\UpdateVersionTest.xproj", "{0DBB03F6-49A7-4409-A5A0-E2346454A014}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DBB03F6-49A7-4409-A5A0-E2346454A014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBB03F6-49A7-4409-A5A0-E2346454A014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBB03F6-49A7-4409-A5A0-E2346454A014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBB03F6-49A7-4409-A5A0-E2346454A014}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DBB03F6-49A7-4409-A5A0-E2346454A014} = {9F201F32-1BC0-4BCE-BF9F-5C9A67F37381}
+	EndGlobalSection
+EndGlobal
