@@ -17,17 +17,10 @@ test: off
 
 before_build:
   - ps: .\Set-PackageLabel.ps1
-  # if git tag = v{Maj}.{Min}.{Build}.{Revision} then use release feed else use CI feed
-  - ps: $nugetSource = 'https://api.nuget.org/v3/index.json';
-  - ps: $isRelease = $Env:APPVEYOR_REPO_TAG -eq $true -and $Env:APPVEYOR_REPO_TAG_NAME -match 'v(\d+(\.)?){1,4}';
-  - ps: if($isRelease) { dotnet restore -v minimal -s $nugetSource } else { dotnet restore -v minimal -s $nugetSource }
-
-before_build:
-  - ps: .\Set-PackageLabel.ps1
   - dotnet restore -v minimal
 
 build:
-  project: parliament-services.sln
+  project: UpdateVersionTest.sln
   parallel: true
   verbosity: minimal
 
