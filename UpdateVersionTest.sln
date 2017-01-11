@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		appveyor.yml = appveyor.yml
 		CreatePackages.ps1 = CreatePackages.ps1
 		global.json = global.json
+		ReleaseVersion.ps1 = ReleaseVersion.ps1
 		Set-PackageLabel.ps1 = Set-PackageLabel.ps1
 		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
 	EndProjectSection
