@@ -4,9 +4,10 @@ configuration:
   - Release
 
 init:
-  - git config --global core.autocrlf input
-  - ps: .\ReleaseVersion.ps1
-  - echo %APPVEYOR_BUILD_VERSION%  
+  - git config --global core.autocrlf input    
+
+install:
+  - ps: .\ReleaseVersion.ps1  
 
 assembly_info:
   patch: true
