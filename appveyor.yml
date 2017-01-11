@@ -5,12 +5,13 @@ configuration:
 
 init:
   - git config --global core.autocrlf input
+  - echo %APPVEYOR_BUILD_VERSION%
 
 assembly_info:
   patch: true
   file: SharedAssemblyInfo.cs
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
+  assembly_version: $(appveyor_build_version)
+  assembly_file_version: $(appveyor_build_version)
   assembly_informational_version: '{version}'
 
 test: off
